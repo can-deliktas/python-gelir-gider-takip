@@ -14,6 +14,8 @@ Bu Python programı, kullanıcıların aylık gelirlerini ve giderlerini kaydetm
 
 ## 📥 **Kurulum**  
 
+📦 **Tüm Kaynak Kodunu İndir** → [v1.0.0.zip](https://github.com/can-deliktas/python-gelir-gider-takip/archive/refs/tags/v1.0.0.zip)  
+
 ### **1️⃣ Depoyu Klonlayın**  
 Aşağıdaki komutu kullanarak projeyi bilgisayarınıza indirin:  
 ```bash
