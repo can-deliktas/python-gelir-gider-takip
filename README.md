@@ -48,6 +48,13 @@ Programı başlattığınızda aşağıdaki menü görüntülenecektir:
 8. Giderleri Düzenle
 ```
 
+## 🖼 **Ekran Görüntüleri**
+Aşağıda programın çalışma ekranlarını görebilirsiniz:
+
+**Ana Menü:**  
+![Ana Menü](screenshots/ana_menu.png)
+
+
 ### 📌 **İşlevler:**
 ✅ **Gelir Ekle:** `1` seçeneğini seçerek gelir miktarınızı ekleyin.  
 ✅ **Gider Ekle:** `2` seçeneğini seçerek giderlerinizi kaydedin.  
@@ -129,9 +136,9 @@ GitHub’a gidin, projenin orijinal deposunu açın ve "New Pull Request" seçen
 
 ---
 
-## 📜 **Lisans**  
-Bu proje **MIT Lisansı** ile lisanslanmıştır. Özgürce kullanabilir ve geliştirebilirsiniz.
-```
+⭐ Projeye GitHub'da yıldız verin!  
+
+Teşekkürler! 🎉
 
 Bu güncellenmiş **README.md** dosyası **menü seçeneklerini** ve **akıllı tavsiye sistemini** son eklenen fonksiyonlara göre düzenledi. 🎯  
 
