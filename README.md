@@ -1,4 +1,5 @@
-# **Gelir-Gider Takip Programı**
+# ** Python ile Gelir-Gider Takip Programı **
+
 
 Bu Python programı, kullanıcıların aylık gelirlerini ve giderlerini kaydetmesine, kalan bakiyeyi hesaplamasına ve **akıllı finansal öneriler almasına** yardımcı olur.
 
@@ -7,7 +8,6 @@ Bu Python programı, kullanıcıların aylık gelirlerini ve giderlerini kaydetm
 ✔ Kalan bakiyeyi anlık görüntüleme  
 ✔ Kişisel finans durumuna göre **akıllı tavsiyeler**  
 ✔ Verileri düzenleme ve temizleme seçeneği  
-✔ Kullanıcı dostu arayüz  
 ✔ JSON dosyalarıyla veri kaydetme  
 
 ---
@@ -17,8 +17,8 @@ Bu Python programı, kullanıcıların aylık gelirlerini ve giderlerini kaydetm
 ### **1️⃣ Depoyu Klonlayın**  
 Aşağıdaki komutu kullanarak projeyi bilgisayarınıza indirin:  
 ```bash
-git clone https://github.com/kullaniciadi/gelir-gider-takip.git
-cd gelir-gider-takip
+https://github.com/can-deliktas/python-gelir-gider-takip.git
+cd python-gelir-gider-takip
 ```
 
 ### **2️⃣ Gerekli Bağımlılıkları Yükleyin**  
@@ -42,19 +42,21 @@ Programı başlattığınızda aşağıdaki menü görüntülenecektir:
 2. Gider Ekle
 3. Kalan Bakiyeyi Gör
 4. Tavsiye Al
-5. Verileri Temizle
-6. Verileri Düzenle
-7. Çıkış
+5. Çıkış
+6. Verileri Temizle
+7. Gelirleri Düzenle
+8. Giderleri Düzenle
 ```
 
 ### 📌 **İşlevler:**
 ✅ **Gelir Ekle:** `1` seçeneğini seçerek gelir miktarınızı ekleyin.  
 ✅ **Gider Ekle:** `2` seçeneğini seçerek giderlerinizi kaydedin.  
 ✅ **Kalan Bakiyeyi Gör:** `3` seçeneği ile güncel mali durumunuzu öğrenin.  
-✅ **Tavsiye Al:** `4` seçeneği, **finansal durumunuza göre akıllı öneriler sunar**.  
-✅ **Verileri Temizle:** `5` seçeneği, tüm kayıtları sıfırlar.  
-✅ **Verileri Düzenle:** `6` seçeneği ile yanlış girilen verileri değiştirebilirsiniz.  
-✅ **Çıkış:** `7` ile programdan güvenli bir şekilde çıkabilirsiniz.  
+✅ **Tavsiye Al:** `4` seçeneği, **gelir-gider dengenize göre kişiselleştirilmiş öneriler sunar**.  
+✅ **Çıkış:** `5` ile programdan güvenli bir şekilde çıkabilirsiniz.  
+✅ **Verileri Temizle:** `6` seçeneği, tüm kayıtları sıfırlar.  
+✅ **Gelirleri Düzenle:** `7` seçeneği ile yanlış girilen gelir verilerini değiştirebilirsiniz.  
+✅ **Giderleri Düzenle:** `8` seçeneği ile giderlerinizi düzenleyebilirsiniz.  
 
 ---
 
@@ -71,10 +73,6 @@ gelir_gider_takip/
 │   ├── database.py            # Veri okuma/yazma işlemleri
 │   ├── hesaplama.py           # Gelir-gider hesaplamaları
 │   ├── tavsiyeler.py          # Finansal öneriler
-│── ui/                        # Arayüz modülleri
-│   ├── giris_ekrani.py        # (Geliştirme aşamasında) Grafiksel UI
-│── tests/                     # Test dosyaları
-│   ├── test_hesaplama.py      # Otomatik testler
 ```
 
 ---
@@ -82,10 +80,15 @@ gelir_gider_takip/
 ## 🤖 **Akıllı Tavsiye Sistemi**  
 Bu program, **gelir ve giderlerinizi analiz ederek** size finansal durumunuza uygun öneriler sunar:  
 
-💰 **Kalan Bakiye < 0** → Acil tasarruf yapmalısınız, gereksiz harcamaları azaltın!  
-💳 **0 TL bakiye** → Harcamalarınızı dikkatlice yönetin, acil durum fonu oluşturun.  
-📈 **5.000 TL < Bakiye < 20.000 TL** → Yatırım yapmaya başlamalısınız.  
-🏦 **50.000 TL+ Bakiye** → Profesyonel yatırım seçeneklerini değerlendirebilirsiniz.  
+💰 **Bakiye < 0 TL** → **Acil önlem alın!** Gelirinizden fazla harcıyorsunuz. Giderleri azaltmalı ve gereksiz harcamaları kısarak borçlanmaktan kaçınmalısınız.  
+
+💳 **0 TL ≤ Bakiye < 500 TL** → **Riskli durum!** Beklenmedik bir harcama karşısında zor durumda kalabilirsiniz. Küçük tasarruflarla acil durum fonu oluşturmaya başlayın.  
+
+📊 **500 TL ≤ Bakiye < 5.000 TL** → **Dengeli bütçe!** Harcamalarınızı kontrol ediyorsunuz. Ancak uzun vadeli yatırımları düşünmek için küçük bir birikim planı yapabilirsiniz.  
+
+📈 **5.000 TL ≤ Bakiye < 20.000 TL** → **Yatırım zamanı!** Harcamalarınızı iyi yönetiyorsunuz. Gelirinizin bir kısmını yatırım araçlarında değerlendirebilirsiniz.  
+
+🏦 **20.000 TL+ Bakiye** → **Finansal özgürlüğe bir adım!** Gelirinizi verimli şekilde yönetiyorsunuz. Profesyonel finansal danışmanlık alarak uzun vadeli yatırımlara yönlenebilirsiniz.  
 
 ---
 
@@ -128,3 +131,8 @@ GitHub’a gidin, projenin orijinal deposunu açın ve "New Pull Request" seçen
 
 ## 📜 **Lisans**  
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Özgürce kullanabilir ve geliştirebilirsiniz.
+```
+
+Bu güncellenmiş **README.md** dosyası **menü seçeneklerini** ve **akıllı tavsiye sistemini** son eklenen fonksiyonlara göre düzenledi. 🎯  
+
+Başka bir ekleme veya değişiklik yapmak ister misin? 🚀
