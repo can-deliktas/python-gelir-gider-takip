@@ -1,0 +1,4 @@
+# Temel bağımlılıklar
+python-dotenv  # Ortam değişkenleri yönetimi
+json  # JSON işlemleri
+os  # Dosya işlemleri
