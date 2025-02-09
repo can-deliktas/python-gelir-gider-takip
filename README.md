@@ -139,7 +139,3 @@ GitHub’a gidin, projenin orijinal deposunu açın ve "New Pull Request" seçen
 ⭐ Projeye GitHub'da yıldız verin!  
 
 Teşekkürler! 🎉
-
-Bu güncellenmiş **README.md** dosyası **menü seçeneklerini** ve **akıllı tavsiye sistemini** son eklenen fonksiyonlara göre düzenledi. 🎯  
-
-Başka bir ekleme veya değişiklik yapmak ister misin? 🚀
