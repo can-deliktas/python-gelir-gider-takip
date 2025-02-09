@@ -1,4 +1,4 @@
-# ** Python ile Gelir-Gider Takip Programı **
+# **Python ile Gelir-Gider Takip Programı**
 
 
 Bu Python programı, kullanıcıların aylık gelirlerini ve giderlerini kaydetmesine, kalan bakiyeyi hesaplamasına ve **akıllı finansal öneriler almasına** yardımcı olur.
